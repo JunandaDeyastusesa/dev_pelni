@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pelni</title>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <!-- Ikon Bootsytrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
+        <div class="container-fluid">
+            <img class="navbar-brand" src="assets/img/PELNI_2023.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link pt-4" aria-current="page" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pt-4" href="docking_dashboard.html">DOCKING DASHBOARD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active pt-4" href="docking_history.html">DOCKING HISTORY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pt-4" href="#">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid pt-5">
+        <section class="docking-dashboard pt-5 vh-100">
+            <div class="docking-dashboard-content-sub-1">
+                <div class="card card-1" id="cardTop">
+                    <!-- <h3 class="sub-title-1 ps-4 py-3 bg-primary mb-0">KM. Sabuk Nusantara 63</h3>
+                    <div class="year d-flex align-items-center ps-4 py-2">
+                        <h5 class="mb-0 me-3">Pilih tahun</h5>
+                        <div class="dropdown">
+                            <a class="btn btn-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pilih Tahun
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">2024</a></li>
+                                <li><a class="dropdown-item" href="#">2025</a></li>
+                            </ul>
+                        </div>
+                    </div> -->
+
+                    <div class="card-body p-0 mt-0">
+                        <div class="cd-body">
+                            <table class="table table-bordered">
+                                <thead class="border-1 border-black">
+                                    <tr class="text-center">
+                                        <th class="py-3" scope="col">NO</th>
+                                        <th class="py-3" scope="col">TIPE KAPAL</th>
+                                        <th class="py-3" scope="col">NAMA KAPAL</th>
+                                        <th class="py-3" scope="col">HISTORY</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table border-1 border-black">
+                                    <tr class="align-middle">
+                                        <td class="text-center m-0 p-0">1.</td>
+                                        <td class="ps-4 m-0 p-0">Kapal type 500 GT</td>
+                                        <td class="ps-4 m-0 p-0">KM. Sabuk Nusantara 63</td>
+                                        <td class="p-0">
+                                            <div class="align-items-center d-flex justify-content-center ">
+                                                <a href="#" class="btn btn-sm btn-primary px-5">Lihat Data</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <a href="#" class="btn-swipe-down btn btn-dark mt-3 py-1 w-100" id="btnSwipeDown">Swipe <i
+                                    class="ps-2 bi bi-caret-down-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-2 d-none" id="cardBottom">
+                    <a href="#" class="btn-swipe-up btn btn-dark mt-3 py-1 w-100" id="btnSwipeUp">
+                        Swipe <i class="ps-2 bi bi-caret-up-fill"></i>
+                    </a>
+
+                    <h3 class="sub-title-2 ps-4 py-3 bg-primary mb-0">KM. Sabuk Nusantara 63</h3>
+                    <div class="btn-place ps-4 p-3 bg-light">
+                        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class="card-link btn px-4 fw-bold border-2 border-black btn-warning">+ Input
+                            Data</a>
+                    </div>
+
+                    <div class="year d-flex justify-content-between align-items-center gap-5 px-4 py-2">
+                        <div class="left d-flex align-items-center gap-3">
+                            <h5 class="mb-0">Pilih tahun</h5>
+                            <div class="dropdown">
+                                <a class="btn btn-light dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pilih Tahun
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">2024</a></li>
+                                    <li><a class="dropdown-item" href="#">2025</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="right d-flex align-items-center my-3">
+                            <p class="mb-0 fw-bold pe-4">PROGRESS PRESENTASE</p>
+                            <div class="progress-circle" data-percentage="75">
+                                <span class="progress-value">75%</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card-body p-0 mt-0">
+                        <div class="cd-body pb-2">
+                            <h5 class="fw-bold p-4">Laporan Perawatan Crew</h5>
+                            <table class="table">
+                                <thead class="custom-border-1">
+                                    <tr class="text-center">
+                                        <th scope="col">NO</th>
+                                        <th scope="col">TANGGAL</th>
+                                        <th scope="col">DEPARTEMEN</th>
+                                        <th scope="col">KEGIATAN</th>
+                                        <th scope="col">KETERANGAN</th>
+                                        <th scope="col">DOKUMENTASI</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table custom-border-2">
+                                    <tr class="align-middle">
+                                        <td class="text-center">1.</td>
+                                        <td class="ps-3">18/03/2025.</td>
+                                        <td class="ps-3">Mesin</td>
+                                        <td class="ps-3">Perawatan mesin induk kiri</td>
+                                        <td class="ps-3">Ganti baru filter bahan bakar</td>
+                                        <td class="text-center"><img src="assets/img/pic-1.png" alt=""></td>
+                                    </tr>
+                                    <tr class="align-middle">
+                                        <td class="text-center">2.</td>
+                                        <td class="ps-3">19/03/2025</td>
+                                        <td class="ps-3">Mesin</td>
+                                        <td class="ps-3">Perawatan mesin bantu</td>
+                                        <td class="ps-3">Pengecekan pompa air laut</td>
+                                        <td class="text-center"><img src="assets/img/pic-2.png" alt=""></td>
+                                    </tr>
+                                    <tr class="align-middle">
+                                        <td class="text-center">3.</td>
+                                        <td class="ps-3">20/03/2025</td>
+                                        <td class="ps-3">Deck</td>
+                                        <td class="ps-3">Perawatan weather deck</td>
+                                        <td class="ps-3">Perawatan deck 3 luar</td>
+                                        <td class="text-center"><img src="assets/img/pic-3.png" alt=""></td>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="exampleModal"
+                        tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">INPUT DATA PERAWATAN
+                                        CREW</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <label class="form-label">Tanggal :</label>
+                                                <input type="date" class="form-control" value="2025-03-19">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label">Kegiatan :</label>
+                                                <select class="form-select">
+                                                    <option>Perawatan Cargo Crane</option>
+                                                    <option>Perawatan BT</option>
+                                                    <option>Perawatan ME Kanan</option>
+                                                    <option>Perawatan ILR</option>
+                                                    <option>Perawatan MES</option>
+                                                    <option>Perawatan GPS</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <label class="form-label">Departemen :</label>
+                                                <select class="form-select">
+                                                    <option>Deck</option>
+                                                    <option selected>Mesin</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label">Dokumentasi :</label><br>
+                                                <button type="button" class="btn btn-primary">
+                                                    <i class="bi bi-upload"></i> Upload
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label">Keterangan :</label>
+                                            <textarea name="keterangan" id="keterangan" rows="3"
+                                                class="form-control"></textarea>
+                                        </div>
+
+                                        <div class="text-center mt-3">
+                                            <button type="submit" class="btn btn-success px-5">Kirim</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 10) {
+                navbar.classList.add('navbar-scrolled');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+            }
+        });
+    </script>
+
+    <script>
+        // Ketika tombol swipe bawah diklik
+        document.getElementById("btnSwipeDown").addEventListener("click", function (e) {
+            e.preventDefault();
+            document.getElementById("cardTop").classList.add("d-none");
+            document.getElementById("cardBottom").classList.remove("d-none");
+        });
+
+        // Ketika tombol swipe atas diklik
+        document.getElementById("btnSwipeUp").addEventListener("click", function (e) {
+            e.preventDefault();
+            document.getElementById("cardBottom").classList.add("d-none");
+            document.getElementById("cardTop").classList.remove("d-none");
+        });
+    </script>
+
+</body>
+
+</html>

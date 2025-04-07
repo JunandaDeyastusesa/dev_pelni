@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    /* height: 100%; */
+}
+
+body {
+    /* height: 100%; */
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+    background-image: url('img/bg3.png');
+    background-size: cover;
+    /* Memastikan gambar menutupi seluruh area */
+    background-repeat: no-repeat;
+    /* Mencegah pengulangan gambar */
+    background-position: center;
+    /* Menempatkan gambar di tengah */
+    background-attachment: fixed;
+    /* (opsional) Biar gambar tetap saat scroll */
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* padding: 1rem; */
+}
+
+.navbar-scrolled {
+    background-color: white !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+nav {
+    .container-fluid {
+        padding-top: 5px;
+    }
+
+    .navbar-brand {
+        width: 100px;
+    }
+
+    .navbar-collapse {
+        ul {
+            li {
+                font-weight: 600;
+            }
+        }
+    }
+
+    .nav-link.active {
+        position: relative;
+        font-weight: bold;
+    }
+
+    .nav-link.active::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 6px;
+        width: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #FF9000;
+    }
+}
+
+.docking-dashboard {
+    .docking-dashboard-content {
+        .card {
+            .card-body {
+
+                button,
+                a {
+                    background-color: #96c7ff;
+                    border: 1px solid #133efc;
+                    color: #000;
+                }
+            }
+        }
+    }
+
+
+    .docking-dashboard-content-sub-1 {
+
+        .progress-circle {
+            width: 90px;
+            height: 90px;
+            background: conic-gradient(#0d6efd 0% 75%, #c9c9c9 75% 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .progress-circle::before {
+            content: "";
+            width: 60px;
+            height: 60px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .progress-value {
+            position: relative;
+            font-weight: bold;
+            color: #0d6efd;
+        }
+
+        .card {
+            background-color: transparent;
+            border: 0px;
+        }
+
+        .sub-title-1 {
+            background-color: #133efc;
+            color: #fff;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        .sub-title-2 {
+            background-color: #133efc;
+            color: #fff;
+            /* border-radius: 10px 10px 0px 0px; */
+        }
+
+        .year {
+            background-color: #DAE7F1;
+            border-radius: 0px;
+        }
+
+        .cd-body {
+            border-radius: 0px 0px 10px 10px;
+            /* padding-bottom: 20px; */
+            background-color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .btn-swipe-down {
+            border-radius: 0px 0px 10px 10px;
+        }
+
+        .btn-swipe-up {
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        .custom-border-1 {
+            th:first-child {
+                border-left: none;
+            }
+
+            th:last-child {
+                border-right: none;
+            }
+
+            th {
+                border-left: 2px solid #FF9244;
+                border-right: 2px solid #FF9244;
+                border-bottom: 2px solid #FF9244;
+                border-top: none;
+            }
+        }
+
+        .custom-border-2 {
+            td:first-child {
+                border-left: none;
+            }
+
+            td:last-child {
+                border-right: none;
+            }
+
+            td {
+                border-left: 2px solid #FF9244;
+                border-right: 2px solid #FF9244;
+                border-top: none;
+                border-bottom: none;
+
+                img {
+                    width: 12em;
+                }
+            }
+        }
+
+
+    }
+}
