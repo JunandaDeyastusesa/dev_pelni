@@ -14,7 +14,7 @@ body {
     /* height: 100%; */
     font-family: 'Arial', sans-serif;
     scroll-behavior: smooth;
-    background-image: url('img/bg3.png');
+    background-image: url('img/BG-REAL.svg');
     background-size: cover;
     /* Memastikan gambar menutupi seluruh area */
     background-repeat: no-repeat;
@@ -193,6 +193,130 @@ nav {
             }
         }
 
+        /* #laporanPdf {
+            width: 100%;
+            margin: auto;
+            font-family: 'Times New Roman', Times, serif;
 
+            .header {
+                margin-bottom: 50px;
+
+                img {
+                    width: 200px;
+                }
+            }
+
+            .content {
+                padding: 0px 70px;
+
+                .top {
+                    padding: 0px 150px;
+                    h3 {
+                        text-align: center;
+                        font-size: 12px;
+                        font-weight: bold;
+                        margin-bottom: 50px;
+                    }
+                }
+
+            }
+        } */
+
+
+    }
+}
+
+.docking-history {
+    .btn-swipe-down {
+        background-color: #0d6efd;
+        font-size: 14px;
+        color: #fff;
+        border-radius: 0px;
+        padding-top: 0.5px;
+        padding-bottom: 0.5px;
+        transition: ease-in-out 0.3s;
+    }
+
+    .btn-swipe-down:hover {
+        background-color: #0759d4;
+        color: #fff;
+    }
+
+
+    .docking-history-content-sub-1 {
+        .card-1 {
+            padding: 20px;
+            padding-top: 30px;
+            border-radius: 0px;
+        }
+
+        .sub-title-1 {
+            background-color: #133efc;
+            color: #fff;
+            font-weight: 500;
+            padding: 10px 0px 10px 0px;
+            margin: 0px 10px 0px 10px;
+        }
+
+        .year {
+            background-color: #DAE7F1;
+            border-radius: 0px;
+            margin: 0px 10px 0px 10px;
+        }
+
+        /* CUSTOME TABLE */
+        .custom-table {
+            border-collapse: separate;
+            border-spacing: 10px 10px;
+            /* membuat gap antar baris */
+            width: 100%;
+        }
+
+        .custom-table td {
+            background-color: #FDEBD0;
+            /* warna peach soft */
+            padding: 12px;
+            border: 1px solid #000000;
+            vertical-align: middle;
+            border-collapse: separate;
+            border-spacing: 10px 0px;
+        }
+
+        .custom-table .label {
+            font-weight: bold;
+            text-align: center;
+            width: 40%;
+        }
+
+        .custom-table .value {
+            width: 60%;
+        }
+    }
+}
+
+.contact {
+    .contact-content {
+        .row {
+            background-color: #fff;
+            padding: 100px 50px;
+
+            h1 {
+                font-size: 80px;
+                font-weight: 800;
+                /* font-family: poppins; */
+                letter-spacing: -2px;
+            }
+
+            h4 {
+                font-size: 30px;
+                font-weight: 600;
+                font-family: poppins;
+            }
+
+            p {
+                font-size: 16px;
+                font-family: poppins;
+            }
+        }
     }
 }

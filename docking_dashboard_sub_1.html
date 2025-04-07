@@ -4,7 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pelni</title>
+    
+    <title>PELNI</title>
+    <link rel="icon" href="assets/img/PELNI_GRF.png" type="image/png">
 
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -40,7 +42,7 @@
                         <a class="nav-link pt-4" href="docking_history.html">DOCKING HISTORY</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link pt-4" href="#">CONTACT</a>
+                        <a class="nav-link pt-4" href="contact.html">CONTACT</a>
                     </li>
                 </ul>
             </div>
@@ -52,17 +54,24 @@
             <div class="docking-dashboard-content-sub-1">
                 <div class="card card-1" id="cardTop">
                     <h3 class="sub-title-1 ps-4 py-3 bg-primary mb-0">KM. Sabuk Nusantara 63</h3>
-                    <div class="year d-flex align-items-center ps-4 py-2">
-                        <h5 class="mb-0 me-3">Pilih tahun</h5>
-                        <div class="dropdown">
-                            <a class="btn btn-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Pilih Tahun
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">2024</a></li>
-                                <li><a class="dropdown-item" href="#">2025</a></li>
-                            </ul>
+                    <div class="year d-flex justify-content-between align-items-center px-4 py-2">
+                        <div class="left d-flex align-items-center">
+                            <h5 class="mb-0 me-3">Pilih tahun</h5>
+                            <div class="dropdown">
+                                <a class="btn btn-light dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pilih Tahun
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">2024</a></li>
+                                    <li><a class="dropdown-item" href="#">2025</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <button id="btnCetak" class="btn btn-danger px-3">
+                                <i class="bi bi-printer me-2"></i> Cetak PDF
+                            </button>
                         </div>
                     </div>
 
@@ -261,7 +270,202 @@
                         </div>
                     </div>
                 </div>
-            </div>
+
+
+                <div class="d-none" id="laporanPdf" style="margin: 0; padding: 0;">
+                    <div class="header d-flex justify-content-between align-items-center px-4 py-2">
+                        <div class="left">
+                            <img style="width: 140px;" src="assets/img/akhlak-bumn.webp" alt="">
+                        </div>
+                        <div class="right">
+                            <img style="width: 140px;" src="assets/img/PELNI_2023.png" alt="">
+                        </div>
+                    </div>
+                    <div class="content" style="padding: 0px 40px;">
+                        <div class="top" style="padding: 0px 60px;">
+                            <h3
+                                style="font-family: 'Times New Roman', Times, serif; text-align: center; font-size: 16px; font-weight: bold; margin-top:50px; margin-bottom: 30px;">
+                                FLOATING REPAIR AND DOCKING KM. SABUK NUSANTARA 63</h3>
+                            <table style="margin-bottom: 20px;">
+                                <tr class="align-top">
+                                    <td style="font-family: 'Times New Roman', Times, serif; width: 230px;">Nama Owner
+                                        Surveyor</td>
+                                    <td class="ps-4 pe-3">:</td>
+                                    <td style="font-family: 'Times New Roman', Times, serif;">Demiar Firdaus N.</td>
+                                </tr>
+                                <tr class="align-top">
+                                    <td style="font-family: 'Times New Roman', Times, serif; width: 230px;">Survei Pra
+                                        Docking</td>
+                                    <td class="ps-4 pe-3">:</td>
+                                    <td style="font-family: 'Times New Roman', Times, serif;">-</td>
+                                </tr>
+                                <tr class="align-top">
+                                    <td style="font-family: 'Times New Roman', Times, serif; width: 230px;">Tanggal Tiba
+                                        Galangan</td>
+                                    <td class="ps-4 pe-3">:</td>
+                                    <td style="font-family: 'Times New Roman', Times, serif;">12-09-2024</td>
+                                </tr>
+                                <tr class="align-top">
+                                    <td style="font-family: 'Times New Roman', Times, serif; width: 230px;">Lokasi
+                                        Galangan</td>
+                                    <td class="ps-4 pe-3">:</td>
+                                    <td style="font-family: 'Times New Roman', Times, serif;">PT. Klaseman Indah Raya,
+                                        Sorong</td>
+                                </tr>
+                                <tr class="align-top">
+                                    <td style="font-family: 'Times New Roman', Times, serif; width: 230px;">Survei</td>
+                                    <td class="ps-4 pe-3">:</td>
+                                    <td style="font-family: 'Times New Roman', Times, serif;">Annual Survei 3 / Special
+                                        Survei 2</td>
+                                </tr>
+                                <tr class="align-top">
+                                    <td style="font-family: 'Times New Roman', Times, serif; width: 230px;">Tanggal Naik
+                                        Dock</td>
+                                    <td class="ps-4 pe-3">:</td>
+                                    <td style="font-family: 'Times New Roman', Times, serif;">14-09-2024</td>
+                                </tr>
+                                <tr class="align-top">
+                                    <td style="font-family: 'Times New Roman', Times, serif; width: 230px;">Tanggal
+                                        Turun Dock</td>
+                                    <td class="ps-4 pe-3">:</td>
+                                    <td style="font-family: 'Times New Roman', Times, serif;">08-10-2024</td>
+                                </tr>
+                                <tr class="align-top">
+                                    <td style="font-family: 'Times New Roman', Times, serif; width: 230px;">Tanggal
+                                        Survei Trial</td>
+                                    <td class="ps-4 pe-3">:</td>
+                                    <td style="font-family: 'Times New Roman', Times, serif;">10-10-2024</td>
+                                </tr>
+                                <tr class="align-top">
+                                    <td style="font-family: 'Times New Roman', Times, serif; width: 230px;">Tanggal
+                                        Kembali Ke Homebase</td>
+                                    <td class="ps-4 pe-3">:</td>
+                                    <td style="font-family: 'Times New Roman', Times, serif;">12-10-2024</td>
+                                </tr>
+                                <tr class="align-top">
+                                    <td style="font-family: 'Times New Roman', Times, serif; width: 230px;">Catatan</td>
+                                    <td class="ps-4 pe-3">:</td>
+                                    <td style="font-family: 'Times New Roman', Times, serif;">Cooler ME dan AE mengalami
+                                        koropos, perlu penggantian tabung depan.</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="content-bottom">
+                            <h4
+                                style="font-family: 'Times New Roman', Times, serif; font-size: 18px; font-weight: bold; text-align: center; margin-top:50px;">
+                                Laporan Perawatan Crew</h4>
+                            <p class="text-end mb-0"
+                                style="margin-right: 30px; font-family: 'Times New Roman', Times, serif;">
+                                <strong>Progress Presentase: 65%</strong>
+                            </p>
+
+                            <table class="table table-bordered border-1 border-black"
+                                style="border-collapse: collapse; width: 100%;">
+                                <thead>
+                                    <tr class="text-center">
+                                        <th style="font-family: 'Times New Roman', Times, serif; font-size: 14px; border: 1px solid black;"
+                                            scope="col">NO</th>
+                                        <th style="font-family: 'Times New Roman', Times, serif; font-size: 14px; border: 1px solid black;"
+                                            scope="col">TANGGAL</th>
+                                        <th style="font-family: 'Times New Roman', Times, serif; font-size: 14px; border: 1px solid black;"
+                                            scope="col">DEPARTEMEN</th>
+                                        <th style="font-family: 'Times New Roman', Times, serif; font-size: 14px; border: 1px solid black;"
+                                            scope="col">KEGIATAN</th>
+                                        <th style="font-family: 'Times New Roman', Times, serif; font-size: 14px; border: 1px solid black;"
+                                            scope="col">KETERANGAN</th>
+                                        <th style="font-family: 'Times New Roman', Times, serif; font-size: 14px; border: 1px solid black;"
+                                            scope="col">DOKUMENTASI</th>
+                                    </tr>
+                                </thead>
+                                <tbody style="border: 1px solid black;">
+                                    <tr class="align-middle">
+                                        <td class="text-center"
+                                            style="font-family: 'Times New Roman', Times, serif; border: 1px solid black;">
+                                            1.</td>
+                                        <td class="ps-3"
+                                            style="font-family: 'Times New Roman', Times, serif; border: 1px solid black;">
+                                            18/03/2025.</td>
+                                        <td class="ps-3"
+                                            style="font-family: 'Times New Roman', Times, serif; border: 1px solid black;">
+                                            Mesin</td>
+                                        <td class="ps-3"
+                                            style="font-family: 'Times New Roman', Times, serif; border: 1px solid black;">
+                                            Perawatan mesin induk kiri
+                                        </td>
+                                        <td class="ps-3"
+                                            style="font-family: 'Times New Roman', Times, serif; border: 1px solid black;">
+                                            Ganti baru filter bahan bakar
+                                        </td>
+                                        <td class="text-center"
+                                            style="font-family: 'Times New Roman', Times, serif; border: 1px solid black;">
+                                            <img style="font-family: 'Times New Roman', Times, serif; width: 120px;"
+                                                src="assets/img/pic-1.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle">
+                                        <td style="font-family: 'Times New Roman', Times, serif; border: 1px solid black;"
+                                            class="text-center">2.</td>
+                                        <td style="font-family: 'Times New Roman', Times, serif; border: 1px solid black;"
+                                            class="ps-3">19/03/2025</td>
+                                        <td style="font-family: 'Times New Roman', Times, serif; border: 1px solid black;"
+                                            class="ps-3">Mesin</td>
+                                        <td style="font-family: 'Times New Roman', Times, serif; border: 1px solid black;"
+                                            class="ps-3">Perawatan mesin bantu</td>
+                                        <td style="font-family: 'Times New Roman', Times, serif; border: 1px solid black;"
+                                            class="ps-3">Pengecekan pompa air laut</td>
+                                        <td style="font-family: 'Times New Roman', Times, serif; border: 1px solid black;"
+                                            class="text-center"><img
+                                                style="font-family: 'Times New Roman', Times, serif; width: 120px;"
+                                                src="assets/img/pic-2.png" alt=""></td>
+                                    </tr>
+                                    <tr class="align-middle">
+                                        <td style="font-family: 'Times New Roman', Times, serif; border: 1px solid black;"
+                                            class="text-center">3.</td>
+                                        <td style="font-family: 'Times New Roman', Times, serif; border: 1px solid black;"
+                                            class="ps-3">20/03/2025</td>
+                                        <td style="font-family: 'Times New Roman', Times, serif; border: 1px solid black;"
+                                            class="ps-3">Deck</td>
+                                        <td style="font-family: 'Times New Roman', Times, serif; border: 1px solid black;"
+                                            class="ps-3">Perawatan weather deck</td>
+                                        <td style="font-family: 'Times New Roman', Times, serif; border: 1px solid black;"
+                                            class="ps-3">Perawatan deck 3 luar</td>
+                                        <td style="font-family: 'Times New Roman', Times, serif; border: 1px solid black;"
+                                            class="text-center"><img
+                                                style="font-family: 'Times New Roman', Times, serif; width: 120px;"
+                                                src="assets/img/pic-3.png" alt=""></td>
+                                    </tr>
+                                    <tr class="align-middle">
+                                        <td class="text-center"
+                                            style="font-family: 'Times New Roman', Times, serif; border: 1px solid black;">
+                                            4.</td>
+                                        <td class="ps-3"
+                                            style="font-family: 'Times New Roman', Times, serif; border: 1px solid black;">
+                                            18/03/2025.</td>
+                                        <td class="ps-3"
+                                            style="font-family: 'Times New Roman', Times, serif; border: 1px solid black;">
+                                            Mesin</td>
+                                        <td class="ps-3"
+                                            style="font-family: 'Times New Roman', Times, serif; border: 1px solid black;">
+                                            Perawatan mesin induk kiri
+                                        </td>
+                                        <td class="ps-3"
+                                            style="font-family: 'Times New Roman', Times, serif; border: 1px solid black;">
+                                            Ganti baru filter bahan bakar
+                                        </td>
+                                        <td class="text-center"
+                                            style="font-family: 'Times New Roman', Times, serif; border: 1px solid black;">
+                                            <img style="font-family: 'Times New Roman', Times, serif; width: 120px;"
+                                                src="assets/img/pic-1.png" alt="">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <img src="assets/img/footer.png" alt="Footer"
+                        style="font-family: 'Times New Roman', Times, serif; margin-top:50px; margin-bottom: 0px; left:0; width: 100%; height: auto;">
+                </div>
         </section>
 
     </div>
@@ -269,6 +473,33 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <script>
+        document.getElementById("btnCetak").addEventListener("click", function () {
+            const element = document.getElementById("laporanPdf");
+
+            const wasHidden = element.classList.contains("d-none");
+
+            if (wasHidden) {
+                element.classList.remove("d-none");
+            }
+
+            html2pdf().set({
+                margin: 1,
+                filename: 'Laporan-Perawatan-Kapal.pdf',
+                image: { type: 'jpeg', quality: 1 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            }).from(element).save().then(() => {
+                if (wasHidden) {
+                    element.classList.add("d-none");
+                }
+            });
+        });
+    </script>
+
 
     <script>
         CKEDITOR.replace('keterangan');
