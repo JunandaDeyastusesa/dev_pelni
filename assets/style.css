@@ -7,22 +7,16 @@
 
 html {
     scroll-behavior: smooth;
-    /* height: 100%; */
 }
 
 body {
-    /* height: 100%; */
     font-family: 'Arial', sans-serif;
     scroll-behavior: smooth;
     background-image: url('img/BG-REAL.svg');
     background-size: cover;
-    /* Memastikan gambar menutupi seluruh area */
     background-repeat: no-repeat;
-    /* Mencegah pengulangan gambar */
     background-position: center;
-    /* Menempatkan gambar di tengah */
     background-attachment: fixed;
-    /* (opsional) Biar gambar tetap saat scroll */
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -30,7 +24,6 @@ body {
 .container-fluid {
     max-width: 1200px;
     margin: 0 auto;
-    /* padding: 1rem; */
 }
 
 .navbar-scrolled {
@@ -78,7 +71,6 @@ nav {
     .docking-dashboard-content {
         .card {
             .card-body {
-
                 button,
                 a {
                     background-color: #96c7ff;
