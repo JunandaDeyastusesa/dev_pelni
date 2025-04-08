@@ -71,6 +71,7 @@ nav {
     .docking-dashboard-content {
         .card {
             .card-body {
+
                 button,
                 a {
                     background-color: #96c7ff;
@@ -110,6 +111,18 @@ nav {
             color: #0d6efd;
         }
 
+        .btn-custom {
+            background: linear-gradient(45deg, #ffde59, #ff914d);
+            border: solid 2px #000;
+            color: #000;
+            padding: 5px 50px;
+            transition: ease-in-out 0.3s;
+        }
+
+        .btn-custom:hover {
+            background: linear-gradient(45deg, #ffdb4a, #e27c3c);
+        }
+
         .card {
             background-color: transparent;
             border: 0px;
@@ -134,17 +147,26 @@ nav {
 
         .cd-body {
             border-radius: 0px 0px 10px 10px;
-            /* padding-bottom: 20px; */
             background-color: #fff;
             margin-bottom: 20px;
         }
 
         .btn-swipe-down {
             border-radius: 0px 0px 10px 10px;
+            font-size: 14px;
+            color: #fff;
+            padding-top: 0.5px;
+            padding-bottom: 0.5px;
+            transition: ease-in-out 0.3s;
         }
 
         .btn-swipe-up {
             border-radius: 10px 10px 0px 0px;
+            font-size: 14px;
+            color: #fff;
+            padding-top: 0.5px;
+            padding-bottom: 0.5px;
+            transition: ease-in-out 0.3s;
         }
 
         .custom-border-1 {
@@ -184,37 +206,6 @@ nav {
                 }
             }
         }
-
-        /* #laporanPdf {
-            width: 100%;
-            margin: auto;
-            font-family: 'Times New Roman', Times, serif;
-
-            .header {
-                margin-bottom: 50px;
-
-                img {
-                    width: 200px;
-                }
-            }
-
-            .content {
-                padding: 0px 70px;
-
-                .top {
-                    padding: 0px 150px;
-                    h3 {
-                        text-align: center;
-                        font-size: 12px;
-                        font-weight: bold;
-                        margin-bottom: 50px;
-                    }
-                }
-
-            }
-        } */
-
-
     }
 }
 

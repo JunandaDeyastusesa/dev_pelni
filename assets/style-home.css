@@ -59,19 +59,21 @@ nav {
 .hero {
     .hero-content {
         h1 {
-            font-size: 96px;
-            font-weight: bolder;
+            font-size: 101px;
+            font-weight: 900;
             color: #2C6AD3;
             margin: 0;
             padding: 0;
+            font-family: Montserrat, sans-serif;
         }
 
         h3 {
-            font-size: 56px;
+            font-size: 60px;
             font-weight: 600;
             line-height: 1;
             margin: 0;
             padding: 0;
+            font-family: Montserrat, sans-serif;
         }
 
         .card {
