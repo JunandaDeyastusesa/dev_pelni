@@ -123,7 +123,8 @@
                         <div class="btn-bottom d-flex justify-content-center">
                             <div class="left">
                                 <a href="#" class="btn-custom card-link btn fw-bold">Save</a>
-                                <a href="#" class="btn-custom card-link btn fw-bold">Edit</a>
+                                <button data-bs-toggle="modal" data-bs-target="#edit-data-doc"
+                                    class="btn-custom card-link btn fw-bold">Edit</button>
                             </div>
                         </div>
                     </div>
@@ -146,24 +147,22 @@
                                         <div class="row mb-3">
                                             <div class="col-md-6">
                                                 <label class="form-label">Nama Owner Surveyor:</label>
-                                                <input type="text" class="form-control"
-                                                    placeholder="Deniar Firdausi N.">
+                                                <input type="text" class="form-control" placeholder="Masukkan nama">
                                             </div>
                                             <div class="col-md-6">
                                                 <label class="form-label">Survei Pra Docking:</label>
-                                                <input type="text" class="form-control" placeholder="-">
+                                                <input type="text" class="form-control" placeholder="Masukkan data">
                                             </div>
                                         </div>
 
                                         <div class="row mb-3">
                                             <div class="col-md-6">
                                                 <label class="form-label">Tanggal Tiba Galangan:</label>
-                                                <input type="date" class="form-control" placeholder="12-09-2024">
+                                                <input type="date" class="form-control" placeholder="Masukkan tanggal">
                                             </div>
                                             <div class="col-md-6">
                                                 <label class="form-label">Lokasi Galangan:</label>
-                                                <input type="text" class="form-control"
-                                                    placeholder="PT. Klasaman Indah Raya, Sorong">
+                                                <input type="text" class="form-control" placeholder="Masukkan lokasi">
                                             </div>
                                         </div>
 
@@ -171,28 +170,109 @@
                                             <div class="col-md-6">
                                                 <label class="form-label">Status Survei:</label>
                                                 <input type="text" class="form-control"
-                                                    placeholder="Annual Survei 3 / Special Survei 2">
+                                                    placeholder="Masukkan status survei">
                                             </div>
                                             <div class="col-md-6">
                                                 <label class="form-label">Tanggal Naik Dock:</label>
-                                                <input type="date" class="form-control" placeholder="14-09-2024">
+                                                <input type="date" class="form-control" placeholder="Masukkan tanggal">
                                             </div>
                                         </div>
 
                                         <div class="row mb-3">
-                                            <div class="col-md-6">
-                                                <label class="form-label">Tanggal Sea Trial:</label>
-                                                <input type="date" class="form-control" placeholder="08-10-2024">
+                                            <div class="col-md-4">
+                                                <label class="form-label">Tanggal Naik Dock:</label>
+                                                <input type="date" class="form-control" value="14-09-2024">
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-4">
+                                                <label class="form-label">Tanggal Sea Trial:</label>
+                                                <input type="date" class="form-control" value="08-10-2024">
+                                            </div>
+                                            <div class="col-md-4">
                                                 <label class="form-label">Tanggal Kembali Ke Homebase:</label>
-                                                <input type="date" class="form-control" placeholder="10-10-2024">
+                                                <input type="date" class="form-control" value="10-10-2024">
                                             </div>
                                         </div>
 
                                         <div class="mb-3">
                                             <label class="form-label">Catatan:</label>
-                                            <textarea class="form-control" rows="3"></textarea>
+                                            <textarea class="form-control" rows="3"
+                                                placeholder="Masukkan catatan"></textarea>
+                                        </div>
+
+                                        <div class="text-end">
+                                            <button type="button" class="btn btn-success px-4"
+                                                data-bs-dismiss="modal">Simpan</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- EDIT MODAL -->
+                    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="edit-data-doc"
+                        tabindex="-1" aria-labelledby="edit-data-docLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5 fw-bold" id="edit-data-docLabel">EDIT DATA SURVEI</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <label class="form-label">Nama Owner Surveyor:</label>
+                                                <input type="text" class="form-control" value="Deniar Firdausi N.">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label">Survei Pra Docking:</label>
+                                                <input type="text" class="form-control" value="-">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <label class="form-label">Tanggal Tiba Galangan:</label>
+                                                <input type="date" class="form-control" value="Masukkan tanggal">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label">Lokasi Galangan:</label>
+                                                <input type="text" class="form-control"
+                                                    value="PT. Klasaman Indah Raya, Sorong">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <label class="form-label">Status Survei:</label>
+                                                <input type="text" class="form-control" value="Annual Survei 3 / Special Survei 2">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label">Tanggal Naik Dock:</label>
+                                                <input type="date" class="form-control" value="14-09-2024">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <div class="col-md-4">
+                                                <label class="form-label">Tanggal Naik Dock:</label>
+                                                <input type="date" class="form-control" value="14-09-2024">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="form-label">Tanggal Sea Trial:</label>
+                                                <input type="date" class="form-control" value="08-10-2024">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="form-label">Tanggal Kembali Ke Homebase:</label>
+                                                <input type="date" class="form-control" value="10-10-2024">
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label">Catatan:</label>
+                                            <textarea class="form-control" rows="3" value="Cooler ME dan AE mengalami keropos, perlu penggantian tahun depan."></textarea>
                                         </div>
 
                                         <div class="text-end">
@@ -233,8 +313,8 @@
                         </div>
                         <div class="right d-flex align-items-center my-3">
                             <p class="mb-0 fw-bold pe-4">PROGRESS PRESENTASE</p>
-                            <div class="progress-circle" data-percentage="75">
-                                <span class="progress-value">75%</span>
+                            <div class="progress-circle" data-percentage="65">
+                                <span class="progress-value">65%</span>
                             </div>
                         </div>
                     </div>
@@ -303,17 +383,20 @@
                                             <div class="col-md-6">
                                                 <label class="form-label">Kegiatan :</label>
                                                 <select class="form-select mesin d-none">
-                                                    <option>Perawatan Cargo Crane</option>
-                                                    <option>Perawatan BT</option>
                                                     <option>Perawatan ME Kanan</option>
-                                                    <option>Perawatan ILR</option>
-                                                    <option>Perawatan MES</option>
-                                                    <option>Perawatan GPS</option>
+                                                    <option>Perawatan BT</option>
+                                                    <option>Perawatan AE No.1</option>
+                                                    <option>Perawatan Air Compressore No.1</option>
+                                                    <option>Perawatan Watertight door</option>
+                                                    <option>Perawatan Cooler AE No.3</option>
                                                 </select>
                                                 <select class="form-select deck d-none">
                                                     <option>Perawatan/Pengecekan Alat Keselamatan (Lifebouy)</option>
-                                                    <option>Perawatan/Pengecekan Alat Keselamatan (Holmes Light)</option>
+                                                    <option>Perawatan/Pengecekan Alat Keselamatan (Holmes Light)
+                                                    </option>
                                                     <option>Perawatan/Pengecekan Alat Keselamatan (Lifejacket)</option>
+                                                    <option>Perawatan Alat Navigasi (GPS)</option>
+                                                    <option>Perawatan Alat Navigasi (AIS)</option>
                                                 </select>
                                             </div>
                                         </div>

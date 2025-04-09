@@ -58,11 +58,11 @@
                         <div class="left d-flex align-items-center">
                             <h5 class="mb-0 me-3">Pilih tahun</h5>
                             <div>
-                                <select class="form-select">
-                                    <option selected>Pilih Tahun</option>
-                                    <option value="1">2023</option>
-                                    <option value="2">2024</option>
-                                    <option value="3">2025</option>
+                                <select class="form-select" id="select-tahun">
+                                    <option selected disabled>Pilih Tahun</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
                                 </select>
                             </div>
                         </div>
@@ -73,7 +73,7 @@
                         </div>
                     </div>
 
-                    <div class="card-body p-0 m-0">
+                    <div class="card-body p-0 m-0 d-none" id="value-table">
                         <div class="cd-body">
                             <table class="custom-table">
                                 <tbody class="table border-1 border-black">
@@ -106,7 +106,12 @@
                             </table>
                         </div>
                     </div>
+
+                    <div class="text-danger d-none bg-light text-center fw-bold py-4 mt-0" id="no-data">
+                        Tidak ada data tahun ini.
+                    </div>
                 </div>
+
             </div>
 
             <!-- TEMPLATE PDF INLINE -->
@@ -340,6 +345,22 @@
 
     <script>
         CKEDITOR.replace('keterangan');
+    </script>
+
+    <script>
+        document.getElementById("select-tahun").addEventListener("change", function () {
+            const selectedValue = this.value;
+            const valueTable = document.getElementById("value-table");
+            const noData = document.getElementById("no-data");
+
+            if (selectedValue === "2024") {
+                valueTable.classList.remove("d-none");
+                noData.classList.add("d-none");
+            } else {
+                valueTable.classList.add("d-none");
+                noData.classList.remove("d-none");
+            }
+        });
     </script>
 
     <script>
