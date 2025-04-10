@@ -196,7 +196,8 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <label class="form-label">Tahun:</label>
-                                                <input type="number" min="1" class="form-control" placeholder="Masukkan tahun">
+                                                <input type="number" min="1" class="form-control"
+                                                    placeholder="Masukkan tahun">
                                             </div>
                                         </div>
 
@@ -254,7 +255,8 @@
                                         <div class="row mb-3">
                                             <div class="col-md-6">
                                                 <label class="form-label">Status Survei:</label>
-                                                <input type="text" class="form-control" value="Annual Survei 3 / Special Survei 2">
+                                                <input type="text" class="form-control"
+                                                    value="Annual Survei 3 / Special Survei 2">
                                             </div>
                                             <div class="col-md-6">
                                                 <label class="form-label">Tanggal Naik Dock:</label>
@@ -286,7 +288,8 @@
 
                                         <div class="mb-3">
                                             <label class="form-label">Catatan:</label>
-                                            <textarea class="form-control" rows="3" value="Cooler ME dan AE mengalami keropos, perlu penggantian tahun depan."></textarea>
+                                            <textarea class="form-control" rows="3"
+                                                value="Cooler ME dan AE mengalami keropos, perlu penggantian tahun depan."></textarea>
                                         </div>
 
                                         <div class="text-end">
@@ -307,29 +310,19 @@
                     </a>
 
                     <h3 class="sub-title-2 ps-4 py-3 bg-primary mb-0">KM. Sabuk Nusantara 63</h3>
-                    <div class="btn-place ps-4 p-3 bg-light">
-                        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                            class="card-link btn px-4 fw-bold border-2 border-black btn-custom">+ Input
-                            Data</a>
-                    </div>
 
                     <div class="year d-flex justify-content-between align-items-center gap-5 px-4 py-2">
-                        <div class="left d-flex align-items-center gap-3">
-                            <h5 class="mb-0">Pilih tahun</h5>
-                            <div>
-                                <select class="form-select">
-                                    <option selected>Pilih Tahun</option>
-                                    <option value="1">2023</option>
-                                    <option value="2">2024</option>
-                                    <option value="3">2025</option>
-                                </select>
-                            </div>
-                        </div>
                         <div class="right d-flex align-items-center my-3">
                             <p class="mb-0 fw-bold pe-4">PROGRESS PRESENTASE</p>
-                            <div class="progress-circle" data-percentage="65">
-                                <span class="progress-value">65%</span>
+                            <div class="progress-circle" data-percentage="2">
+                                <span class="progress-value">2,63</span>
                             </div>
+                        </div>
+
+                        <div class="btn-place ps-4 p-3">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                class="card-link btn px-4 fw-bold border-2 border-black btn-custom">+ Input
+                                Data</a>
                         </div>
                     </div>
 
@@ -351,7 +344,7 @@
                                 <tbody class="table custom-border-2">
                                     <tr class="align-middle">
                                         <td class="text-center">1.</td>
-                                        <td class="ps-3">18/03/2025.</td>
+                                        <td class="ps-3">15/09/2024.</td>
                                         <td class="ps-3">Mesin</td>
                                         <td class="ps-3">Perawatan mesin induk kiri</td>
                                         <td class="ps-3">Ganti baru filter bahan bakar</td>
@@ -359,7 +352,7 @@
                                     </tr>
                                     <tr class="align-middle">
                                         <td class="text-center">2.</td>
-                                        <td class="ps-3">19/03/2025</td>
+                                        <td class="ps-3">16/09/2024</td>
                                         <td class="ps-3">Mesin</td>
                                         <td class="ps-3">Perawatan mesin bantu</td>
                                         <td class="ps-3">Pengecekan pompa air laut</td>
@@ -367,7 +360,7 @@
                                     </tr>
                                     <tr class="align-middle">
                                         <td class="text-center">3.</td>
-                                        <td class="ps-3">20/03/2025</td>
+                                        <td class="ps-3">17/09/2024</td>
                                         <td class="ps-3">Deck</td>
                                         <td class="ps-3">Perawatan weather deck</td>
                                         <td class="ps-3">Perawatan deck 3 luar</td>
@@ -387,7 +380,7 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body">
+                                <div class="modal-body add-modal">
                                     <form>
                                         <div class="row mb-3">
                                             <div class="col-md-6">
@@ -398,19 +391,133 @@
                                                 <label class="form-label">Kegiatan :</label>
                                                 <select class="form-select mesin d-none">
                                                     <option>Perawatan ME Kanan</option>
-                                                    <option>Perawatan BT</option>
+                                                    <option>Perawatan ME Kiri</option>
+                                                    <option>Perawatan GB Kanan</option>
+                                                    <option>Perawatan GB Kiri</option>
                                                     <option>Perawatan AE No.1</option>
+                                                    <option>Perawatan AE No.2</option>
+                                                    <option>Perawatan AE No.3</option>
+                                                    <option>Perawatan AE Harbour</option>
+                                                    <option>Perawatan AE Emergency</option>
+                                                    <option>Perawatan Alternator AE No1</option>
+                                                    <option>Perawatan Alternator AE No2</option>
+                                                    <option>Perawatan Alternator AE No3</option>
+                                                    <option>Perawatan Alternator AE Harbour</option>
+                                                    <option>Perawatan Alternator AE Emergency</option>
                                                     <option>Perawatan Air Compressore No.1</option>
-                                                    <option>Perawatan Watertight door</option>
+                                                    <option>Perawatan Air Compressore No.2</option>
+                                                    <option>Perawatan Mesin AC No.1 / AHU</option>
+                                                    <option>Perawatan Mesin AC No.2 / AHU</option>
+                                                    <option>Perawatan Mesin AC No.3 / AHU</option>
+                                                    <option>Perawatan Mesin AC No.4 / AHU</option>
+                                                    <option>Perawatan AC Split</option>
+                                                    <option>Perawatan Cargo Crane</option>
+                                                    <option>Perawatan Cooler ME Kanan</option>
+                                                    <option>Perawatan Cooler ME Kiri</option>
+                                                    <option>Perawatan Cooler AE No.1</option>
+                                                    <option>Perawatan Cooler AE No.2</option>
                                                     <option>Perawatan Cooler AE No.3</option>
+                                                    <option>Pembersihan Funnel / Cerobong</option>
+                                                    <option>Perawatan Accomodation Ladder (Electromotor)</option>
+                                                    <option>Perawatan Accomodation Ladder (Gearbox)</option>
+                                                    <option>Perawatan Accomodation Ladder (Panel)</option>
+                                                    <option>Perawatan Steering Gear (Hydraulic Pump 1 & 2)</option>
+                                                    <option>Perawatan Steering Gear (Steering Gear Room)</option>
+                                                    <option>Perawatan Steering Gear (Emergency Steering Gear)</option>
+                                                    <option>Perawatan Steering Gear (Perawatan dan Pengecatan)</option>
+                                                    <option>Perawatan BT (Hydraulic Power Unit)</option>
+                                                    <option>Perawatan BT (Electric System)</option>
+                                                    <option>Perawatan Fairlead</option>
+                                                    <option>Perawatan Watertight door</option>
+                                                    <option>Perawatan Fire door</option>
+                                                    <option>Perawatan Main Boiler</option>
+                                                    <option>Perawatan Electromotor Pompa-Pompa</option>
+                                                    <option>Perawatan Pompa-Pompa</option>
+                                                    <option>Perawatan Main Switch Board (AE 1)</option>
+                                                    <option>Perawatan Main Switch Board (AE 2)</option>
+                                                    <option>Perawatan Main Switch Board (AE 3)</option>
+                                                    <option>Perawatan Main Switch Board (Harbour Generator)</option>
+                                                    <option>Perawatan Main Switch Board (Emergency Generator)</option>
+                                                    <option>Perawatan Main Switch Board (BT)</option>
+                                                    <option>Perawatan Main Switch Board (Fan Blower)</option>
+                                                    <option>Perawatan Ruang Kamar Mesin (Lantai, dll)</option>
+
                                                 </select>
                                                 <select class="form-select deck d-none">
                                                     <option>Perawatan/Pengecekan Alat Keselamatan (Lifebouy)</option>
                                                     <option>Perawatan/Pengecekan Alat Keselamatan (Holmes Light)
                                                     </option>
                                                     <option>Perawatan/Pengecekan Alat Keselamatan (Lifejacket)</option>
+                                                    <option>Perawatan/Pengecekan Alat Keselamatan (Line Throwing)
+                                                    </option>
+                                                    <option>Perawatan/Pengecekan Alat Keselamatan (Rocket Parachute
+                                                        Signal)</option>
+                                                    <option>Perawatan/Pengecekan Alat Keselamatan (Red Hand Flare)
+                                                    </option>
+                                                    <option>Perawatan/Pengecekan Alat Keselamatan (Fireman Outfit)
+                                                    </option>
+                                                    <option>Perawatan/Pengecekan Alat Keselamatan (Fire Extinguiser)
+                                                    </option>
+                                                    <option>Perawatan Tangga Pandu</option>
+                                                    <option>Perawatan Accomodation Ladder (Wire)</option>
+                                                    <option>Perawatan Accomodation Ladder (Roller)</option>
+                                                    <option>Perawatan Accomodation Ladder (Permukaan Tangga Tidak Licin)
+                                                    </option>
+                                                    <option>Perawatan Accomodation Ladder (Pelumasan Bagian yang
+                                                        Bergerak)</option>
+                                                    <option>Perawatan Wire Crane dan Tiang Crane</option>
+                                                    <option>Perawatan Lifeboat / Rescue Boat (Wire)</option>
+                                                    <option>Perawatan Lifeboat / Rescue Boat (David)</option>
+                                                    <option>Perawatan Lifeboat / Rescue Boat (Lambung)</option>
+                                                    <option>Perawatan Lifeboat / Rescue Boat (Cek Perlengkapan)</option>
+                                                    <option>Perawatan ILR</option>
+                                                    <option>Perawatan MES</option>
+                                                    <option>Perawatan Weather Deck/Dek Terbuka (Deck 2)</option>
+                                                    <option>Perawatan Weather Deck/Dek Terbuka (Deck 3)</option>
+                                                    <option>Perawatan Weather Deck/Dek Terbuka (Deck 4)</option>
+                                                    <option>Perawatan Weather Deck/Dek Terbuka (Deck 5/Top Deck)
+                                                    </option>
+                                                    <option>Perawatan Weather Deck/Dek Terbuka (Haluan)</option>
+                                                    <option>Perawatan Weather Deck/Dek Terbuka (Buritan)</option>
+                                                    <option>Perawatan deck fitting & equipment</option>
+                                                    <option>Perawatan bangunan atas kapal</option>
+                                                    <option>Perawatan Akomodasi Penumpang</option>
+                                                    <option>Perawatan Toilet Penumpang</option>
+                                                    <option>Perawatan dan Pembersihan palka / ruang cargo</option>
                                                     <option>Perawatan Alat Navigasi (GPS)</option>
+                                                    <option>Perawatan Alat Navigasi (Radar No 1)</option>
+                                                    <option>Perawatan Alat Navigasi (Radar No 2)</option>
                                                     <option>Perawatan Alat Navigasi (AIS)</option>
+                                                    <option>Perawatan Alat Navigasi (Gyro Compass)</option>
+                                                    <option>Perawatan Alat Navigasi (Compass Magnetic + Spare)</option>
+                                                    <option>Perawatan Alat Navigasi (Auto Pilot)</option>
+                                                    <option>Perawatan Alat Navigasi (Windspeed)</option>
+                                                    <option>Perawatan Alat Navigasi (Rudder Angle Indicator)</option>
+                                                    <option>Perawatan Alat Navigasi (Electromagnetic Log)</option>
+                                                    <option>Perawatan Alat Navigasi (Digital Log)</option>
+                                                    <option>Perawatan Alat Navigasi (Echosounder)</option>
+                                                    <option>Perawatan Alat Navigasi (Speed Indicator)</option>
+                                                    <option>Perawatan Alat Navigasi (Chronometer)</option>
+                                                    <option>Perawatan Alat Navigasi (Clock System)</option>
+                                                    <option>Perawatan Alat Navigasi (Weather Facsimiles Receiver)
+                                                    </option>
+                                                    <option>Perawatan Alat Navigasi (Radio Equipment)</option>
+                                                    <option>Perawatan Alat Navigasi (SART)</option>
+                                                    <option>Perawatan Alat Navigasi (EPIRB)</option>
+                                                    <option>Perawatan Alat Navigasi (Internal Communication System)
+                                                    </option>
+                                                    <option>Perawatan Alat Navigasi (VHF/FM radio telephone)</option>
+                                                    <option>Perawatan Alat Navigasi (Two way VHF radio)</option>
+                                                    <option>Perawatan Alat Navigasi (Walkie talkie)</option>
+                                                    <option>Perawatan Alat Navigasi (Public Addressor)</option>
+                                                    <option>Perawatan Alat Navigasi (Navigation Light)</option>
+                                                    <option>Perawatan Alat Navigasi (Aldis Lamp)</option>
+                                                    <option>Perawatan Alat Navigasi (Search Light)</option>
+                                                    <option>Perawatan Alat Navigasi (Window Wipers)</option>
+                                                    <option>Perawatan Alat Navigasi (Clear View Screen)</option>
+                                                    <option>Perawatan ECDIS</option>
+                                                    <option>Perawatan CCTV</option>
+                                                    <option>General Cleaning</option>
                                                 </select>
                                             </div>
                                         </div>
