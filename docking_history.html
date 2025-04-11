@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <title>PELNI</title>
     <link rel="icon" href="assets/img/PELNI_GRF.png" type="image/png">
 
@@ -49,11 +49,11 @@
 
     <div class="container-fluid pt-5">
         <section class="docking-history pt-5">
-            <div class="docking-history-content">
+            <div class="docking-history-content mb-4">
                 <div class="card card-1" id="cardTop">
                     <div class="card-body p-0 mt-0">
                         <div class="cd-body">
-                            <table class="table table-bordered mb-0">
+                            <table class="table table-bordered mb-0" id="kapalTable">
                                 <thead class="border-1 border-black">
                                     <tr class="text-center">
                                         <th class="py-3" scope="col">NO</th>
@@ -63,7 +63,7 @@
                                     </tr>
                                 </thead>
                                 <tbody class="table border-1 border-black">
-                                    <tr class="align-middle">
+                                    <tr class="align-middle kapal-row">
                                         <td class="text-center m-0 p-0">1.</td>
                                         <td class="ps-4 m-0 p-0">Kapal type 500 GT</td>
                                         <td class="ps-4 m-0 p-0">KM. Sabuk Nusantara 63</td>
@@ -74,80 +74,297 @@
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr class="align-middle">
+                                    <tr class="align-middle kapal-row">
                                         <td class="text-center m-0 p-0">2.</td>
                                         <td class="ps-4 m-0 p-0">Kapal type 750 GT</td>
                                         <td class="ps-4 m-0 p-0">KM. Sabuk Nusantara 52</td>
                                         <td class="p-0">
                                             <div class="align-items-center d-flex justify-content-center ">
-                                                <a href="#"
-                                                    class="btn btn-sm btn-primary px-5">Lihat Data</a>
+                                                <a href="#" class="btn btn-sm btn-primary px-5">Lihat Data</a>
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr class="align-middle">
+                                    <tr class="align-middle kapal-row">
                                         <td class="text-center m-0 p-0">3.</td>
                                         <td class="ps-4 m-0 p-0">Kapal type 750 GT</td>
                                         <td class="ps-4 m-0 p-0">KM. Sabuk Nusantara 53</td>
                                         <td class="p-0">
                                             <div class="align-items-center d-flex justify-content-center ">
-                                                <a href="#"
-                                                    class="btn btn-sm btn-primary px-5">Lihat Data</a>
+                                                <a href="#" class="btn btn-sm btn-primary px-5">Lihat Data</a>
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr class="align-middle">
+                                    <tr class="align-middle kapal-row">
                                         <td class="text-center m-0 p-0">4.</td>
+                                        <td class="ps-4 m-0 p-0">Kapal type 750 GT</td>
+                                        <td class="ps-4 m-0 p-0">KM. Sabuk Nusantara 58</td>
+                                        <td class="p-0">
+                                            <div class="align-items-center d-flex justify-content-center ">
+                                                <a href="#" class="btn btn-sm btn-primary px-5">Lihat Data</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle kapal-row">
+                                        <td class="text-center m-0 p-0">5.</td>
+                                        <td class="ps-4 m-0 p-0">Kapal type 750 GT</td>
+                                        <td class="ps-4 m-0 p-0">KM. Sabuk Nusantara 112</td>
+                                        <td class="p-0">
+                                            <div class="align-items-center d-flex justify-content-center ">
+                                                <a href="#" class="btn btn-sm btn-primary px-5">Lihat Data</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <!-- 1200 TYPE -->
+                                    <tr class="align-middle kapal-row">
+                                        <td class="text-center m-0 p-0">6.</td>
+                                        <td class="ps-4 m-0 p-0">Kapal type 1200 GT</td>
+                                        <td class="ps-4 m-0 p-0">KM. Sabuk Nusantara 42</td>
+                                        <td class="p-0">
+                                            <div class="align-items-center d-flex justify-content-center ">
+                                                <a href="#" class="btn btn-sm btn-primary px-5">Lihat Data</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle kapal-row">
+                                        <td class="text-center m-0 p-0">7.</td>
+                                        <td class="ps-4 m-0 p-0">Kapal type 1200 GT</td>
+                                        <td class="ps-4 m-0 p-0">KM. Sabuk Nusantara 92</td>
+                                        <td class="p-0">
+                                            <div class="align-items-center d-flex justify-content-center ">
+                                                <a href="#" class="btn btn-sm btn-primary px-5">Lihat Data</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle kapal-row">
+                                        <td class="text-center m-0 p-0">8.</td>
+                                        <td class="ps-4 m-0 p-0">Kapal type 1200 GT</td>
+                                        <td class="ps-4 m-0 p-0">KM. Sabuk Nusantara 93</td>
+                                        <td class="p-0">
+                                            <div class="align-items-center d-flex justify-content-center ">
+                                                <a href="#" class="btn btn-sm btn-primary px-5">Lihat Data</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle kapal-row">
+                                        <td class="text-center m-0 p-0">9.</td>
+                                        <td class="ps-4 m-0 p-0">Kapal type 1200 GT</td>
+                                        <td class="ps-4 m-0 p-0">KM. Sabuk Nusantara 94</td>
+                                        <td class="p-0">
+                                            <div class="align-items-center d-flex justify-content-center ">
+                                                <a href="#" class="btn btn-sm btn-primary px-5">Lihat Data</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle kapal-row">
+                                        <td class="text-center m-0 p-0">10.</td>
                                         <td class="ps-4 m-0 p-0">Kapal type 1200 GT</td>
                                         <td class="ps-4 m-0 p-0">KM. Sabuk Nusantara 95</td>
                                         <td class="p-0">
                                             <div class="align-items-center d-flex justify-content-center ">
-                                                <a href="#"
-                                                    class="btn btn-sm btn-primary px-5">Lihat Data</a>
+                                                <a href="#" class="btn btn-sm btn-primary px-5">Lihat Data</a>
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr class="align-middle">
-                                        <td class="text-center m-0 p-0">5.</td>
+                                    <tr class="align-middle kapal-row d-none extra-row">
+                                        <td class="text-center m-0 p-0">11.</td>
                                         <td class="ps-4 m-0 p-0">Kapal type 1200 GT</td>
                                         <td class="ps-4 m-0 p-0">KM. Sabuk Nusantara 96</td>
                                         <td class="p-0">
                                             <div class="align-items-center d-flex justify-content-center ">
-                                                <a href="#"
-                                                    class="btn btn-sm btn-primary px-5">Lihat Data</a>
+                                                <a href="#" class="btn btn-sm btn-primary px-5">Lihat Data</a>
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr class="align-middle">
-                                        <td class="text-center m-0 p-0">6.</td>
+                                    <tr class="align-middle kapal-row d-none extra-row">
+                                        <td class="text-center m-0 p-0">12.</td>
+                                        <td class="ps-4 m-0 p-0">Kapal type 1200 GT</td>
+                                        <td class="ps-4 m-0 p-0">KM. Sabuk Nusantara 97</td>
+                                        <td class="p-0">
+                                            <div class="align-items-center d-flex justify-content-center ">
+                                                <a href="#" class="btn btn-sm btn-primary px-5">Lihat Data</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle kapal-row d-none extra-row">
+                                        <td class="text-center m-0 p-0">13.</td>
+                                        <td class="ps-4 m-0 p-0">Kapal type 1200 GT</td>
+                                        <td class="ps-4 m-0 p-0">KM. Sabuk Nusantara 98</td>
+                                        <td class="p-0">
+                                            <div class="align-items-center d-flex justify-content-center ">
+                                                <a href="#" class="btn btn-sm btn-primary px-5">Lihat Data</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle kapal-row d-none extra-row">
+                                        <td class="text-center m-0 p-0">14.</td>
+                                        <td class="ps-4 m-0 p-0">Kapal type 1200 GT</td>
+                                        <td class="ps-4 m-0 p-0">KM. Sabuk Nusantara 100</td>
+                                        <td class="p-0">
+                                            <div class="align-items-center d-flex justify-content-center ">
+                                                <a href="#" class="btn btn-sm btn-primary px-5">Lihat Data</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle kapal-row d-none extra-row">
+                                        <td class="text-center m-0 p-0">15.</td>
+                                        <td class="ps-4 m-0 p-0">Kapal type 1200 GT</td>
+                                        <td class="ps-4 m-0 p-0">KM. Sabuk Nusantara 104</td>
+                                        <td class="p-0">
+                                            <div class="align-items-center d-flex justify-content-center ">
+                                                <a href="#" class="btn btn-sm btn-primary px-5">Lihat Data</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle kapal-row d-none extra-row">
+                                        <td class="text-center m-0 p-0">16.</td>
+                                        <td class="ps-4 m-0 p-0">Kapal type 1200 GT</td>
+                                        <td class="ps-4 m-0 p-0">KM. Sabuk Nusantara 105</td>
+                                        <td class="p-0">
+                                            <div class="align-items-center d-flex justify-content-center ">
+                                                <a href="#" class="btn btn-sm btn-primary px-5">Lihat Data</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle kapal-row d-none extra-row">
+                                        <td class="text-center m-0 p-0">17.</td>
+                                        <td class="ps-4 m-0 p-0">Kapal type 1200 GT</td>
+                                        <td class="ps-4 m-0 p-0">KM. Sabuk Nusantara 106</td>
+                                        <td class="p-0">
+                                            <div class="align-items-center d-flex justify-content-center ">
+                                                <a href="#" class="btn btn-sm btn-primary px-5">Lihat Data</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle kapal-row d-none extra-row">
+                                        <td class="text-center m-0 p-0">18.</td>
+                                        <td class="ps-4 m-0 p-0">Kapal type 1200 GT</td>
+                                        <td class="ps-4 m-0 p-0">KM. Sabuk Nusantara 108</td>
+                                        <td class="p-0">
+                                            <div class="align-items-center d-flex justify-content-center ">
+                                                <a href="#" class="btn btn-sm btn-primary px-5">Lihat Data</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <!-- 2000 TYPE -->
+                                    <tr class="align-middle kapal-row d-none extra-row">
+                                        <td class="text-center m-0 p-0">19.</td>
+                                        <td class="ps-4 m-0 p-0">Kapal type 2000 GT</td>
+                                        <td class="ps-4 m-0 p-0">KM. Sabuk Nusantara 48</td>
+                                        <td class="p-0">
+                                            <div class="align-items-center d-flex justify-content-center ">
+                                                <a href="#" class="btn btn-sm btn-primary px-5">Lihat Data</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle kapal-row d-none extra-row">
+                                        <td class="text-center m-0 p-0">20.</td>
+                                        <td class="ps-4 m-0 p-0">Kapal type 2000 GT</td>
+                                        <td class="ps-4 m-0 p-0">KM. Sabuk Nusantara 68</td>
+                                        <td class="p-0">
+                                            <div class="align-items-center d-flex justify-content-center ">
+                                                <a href="#" class="btn btn-sm btn-primary px-5">Lihat Data</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle kapal-row d-none extra-row">
+                                        <td class="text-center m-0 p-0">21.</td>
+                                        <td class="ps-4 m-0 p-0">Kapal type 2000 GT</td>
+                                        <td class="ps-4 m-0 p-0">KM. Sabuk Nusantara 69</td>
+                                        <td class="p-0">
+                                            <div class="align-items-center d-flex justify-content-center ">
+                                                <a href="#" class="btn btn-sm btn-primary px-5">Lihat Data</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle kapal-row d-none extra-row">
+                                        <td class="text-center m-0 p-0">22.</td>
                                         <td class="ps-4 m-0 p-0">Kapal type 2000 GT</td>
                                         <td class="ps-4 m-0 p-0">KM. Sabuk Nusantara 71</td>
                                         <td class="p-0">
                                             <div class="align-items-center d-flex justify-content-center ">
-                                                <a href="#"
-                                                    class="btn btn-sm btn-primary px-5">Lihat Data</a>
+                                                <a href="#" class="btn btn-sm btn-primary px-5">Lihat Data</a>
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr class="align-middle">
-                                        <td class="text-center m-0 p-0">7.</td>
+                                    <tr class="align-middle kapal-row d-none extra-row">
+                                        <td class="text-center m-0 p-0">23.</td>
                                         <td class="ps-4 m-0 p-0">Kapal type 2000 GT</td>
                                         <td class="ps-4 m-0 p-0">KM. Sabuk Nusantara 75</td>
                                         <td class="p-0">
                                             <div class="align-items-center d-flex justify-content-center ">
-                                                <a href="#"
-                                                    class="btn btn-sm btn-primary px-5">Lihat Data</a>
+                                                <a href="#" class="btn btn-sm btn-primary px-5">Lihat Data</a>
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr class="align-middle">
-                                        <td class="text-center m-0 p-0">8.</td>
+                                    <tr class="align-middle kapal-row d-none extra-row">
+                                        <td class="text-center m-0 p-0">24.</td>
                                         <td class="ps-4 m-0 p-0">Kapal type 2000 GT</td>
                                         <td class="ps-4 m-0 p-0">KM. Sabuk Nusantara 78</td>
                                         <td class="p-0">
                                             <div class="align-items-center d-flex justify-content-center ">
-                                                <a href="#"
-                                                    class="btn btn-sm btn-primary px-5">Lihat Data</a>
+                                                <a href="#" class="btn btn-sm btn-primary px-5">Lihat Data</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle kapal-row d-none extra-row">
+                                        <td class="text-center m-0 p-0">25.</td>
+                                        <td class="ps-4 m-0 p-0">Kapal type 2000 GT</td>
+                                        <td class="ps-4 m-0 p-0">KM. Sabuk Nusantara 80</td>
+                                        <td class="p-0">
+                                            <div class="align-items-center d-flex justify-content-center ">
+                                                <a href="#" class="btn btn-sm btn-primary px-5">Lihat Data</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle kapal-row d-none extra-row">
+                                        <td class="text-center m-0 p-0">26.</td>
+                                        <td class="ps-4 m-0 p-0">Kapal type 2000 GT</td>
+                                        <td class="ps-4 m-0 p-0">KM. Sabuk Nusantara 81</td>
+                                        <td class="p-0">
+                                            <div class="align-items-center d-flex justify-content-center ">
+                                                <a href="#" class="btn btn-sm btn-primary px-5">Lihat Data</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle kapal-row d-none extra-row">
+                                        <td class="text-center m-0 p-0">27.</td>
+                                        <td class="ps-4 m-0 p-0">Kapal type 2000 GT</td>
+                                        <td class="ps-4 m-0 p-0">KM. Sabuk Nusantara 85</td>
+                                        <td class="p-0">
+                                            <div class="align-items-center d-flex justify-content-center ">
+                                                <a href="#" class="btn btn-sm btn-primary px-5">Lihat Data</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle kapal-row d-none extra-row">
+                                        <td class="text-center m-0 p-0">28.</td>
+                                        <td class="ps-4 m-0 p-0">Kapal type 2000 GT</td>
+                                        <td class="ps-4 m-0 p-0">KM. Sabuk Nusantara 86</td>
+                                        <td class="p-0">
+                                            <div class="align-items-center d-flex justify-content-center ">
+                                                <a href="#" class="btn btn-sm btn-primary px-5">Lihat Data</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle kapal-row d-none extra-row">
+                                        <td class="text-center m-0 p-0">29.</td>
+                                        <td class="ps-4 m-0 p-0">Kapal type 2000 GT</td>
+                                        <td class="ps-4 m-0 p-0">KM. Sabuk Nusantara 90</td>
+                                        <td class="p-0">
+                                            <div class="align-items-center d-flex justify-content-center ">
+                                                <a href="#" class="btn btn-sm btn-primary px-5">Lihat Data</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle kapal-row d-none extra-row">
+                                        <td class="text-center m-0 p-0">30.</td>
+                                        <td class="ps-4 m-0 p-0">Kapal type 2000 GT</td>
+                                        <td class="ps-4 m-0 p-0">KM. Sabuk Nusantara 91</td>
+                                        <td class="p-0">
+                                            <div class="align-items-center d-flex justify-content-center ">
+                                                <a href="#" class="btn btn-sm btn-primary px-5">Lihat Data</a>
                                             </div>
                                         </td>
                                     </tr>
@@ -175,6 +392,26 @@
             } else {
                 navbar.classList.remove('navbar-scrolled');
             }
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const allRows = document.querySelectorAll(".kapal-row");
+            const maxVisible = 9;
+
+            allRows.forEach((row, index) => {
+                if (index >= maxVisible) {
+                    row.classList.add("d-none", "extra-row");
+                }
+            });
+
+            const btnSwipeDown = document.getElementById("btnSwipeDown");
+            btnSwipeDown.addEventListener("click", function () {
+                const hiddenRows = document.querySelectorAll(".extra-row.d-none");
+                hiddenRows.forEach(row => row.classList.remove("d-none"));
+                btnSwipeDown.classList.add("d-none"); // sembunyikan tombol setelah klik
+            });
         });
     </script>
 
